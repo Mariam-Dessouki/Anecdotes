@@ -6,8 +6,8 @@ import App from "../App";
 import store from "../store.js";
 
 
-describe("<AnecdoteList />", () => {
-  it("should render items", () => {
+describe("<App />", () => {
+  it("should contain anecdote form and filter", () => {
     render(<Provider store={store}><App /></Provider>);
     expect(screen.getByText("Add anecdote:")).toBeVisible();
     expect(screen.getByText("filter")).toBeVisible();
