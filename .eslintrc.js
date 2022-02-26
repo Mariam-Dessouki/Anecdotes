@@ -5,7 +5,7 @@ module.exports = {
     es6: true,
     node: true,
     jest: true,
-    cypress: true,
+    "cypress/globals": true
   },
   extends: ["eslint:recommended", "plugin:react/recommended"],
   parserOptions: {
@@ -15,7 +15,7 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: "module",
   },
-  plugins: ["react"],
+  plugins: ["react","cypress"],
   rules: {
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "double"],
